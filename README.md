@@ -1,4 +1,4 @@
-# Infosec_Tools
+# OpenURLS
 Scripts to assist with daily InfoSec tasks.
 
 ## Websites: A console script opens URLs in a browser based upon your menu selection.
