@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# The script assumes you are running Chrome.
+# The script assumes you are running Firefox.
 # The script presents an options menu and opens browser tabs based on selection.
 
 clear
@@ -54,7 +54,7 @@ function pause(){
 
 
 function OpenTabs(){
-    launch="google-chrome ${LISTY[@]}"
+    launch="firefox ${LISTY[@]}"
     $launch 2>/dev/null &
 }
 

@@ -1,4 +1,4 @@
-# The script assumes you are running Chrome.
+# The script assumes you are running firefox on Linux, Chrome on Windows.
 # The script presents an options menu and opens browser tabs based on selection.
 # To run on Linux, get PowerShell from here: https://github.com/PowerShell/PowerShell
 # The command to launch PowerShell on Linux is: pwsh
@@ -56,7 +56,7 @@ function Open-Tabs
 {
     foreach ($i in $list) {
         If ($PSVersionTable.Platform.Contains('nix')) { #checks the OS Platform
-            [System.Diagnostics.Process]::Start("google-chrome",$i)
+            [System.Diagnostics.Process]::Start("firefox",$i)
         }
         else {
             [System.Diagnostics.Process]::Start("chrome.exe",$i)

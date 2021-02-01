@@ -1,6 +1,6 @@
-// The script assumes you are running Chrome.
+// The script assumes you are running a default browser.
 // The script presents an options menu and opens browser tabs based on selection.
-var opn = require('opn');
+var opn = require('open');
 var menu = require('node-menu');
 
 // Tools sites

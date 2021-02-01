@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-''' The script assumes you are running Chrome.
+''' The script assumes you have a default browser.
+    Updated to Python 3.
     The script presents an options menu and opens browser tabs based on selection.'''
 
 import os
@@ -70,28 +71,28 @@ MENU['2'] = "Press '2' for News."
 MENU['3'] = "Press '3' for Blogs."
 MENU['Q'] = "Press 'Q' to quit."
 while True:
-    OPTIONS = MENU.keys()
+    OPTIONS = list(MENU.keys())
     OPTIONS.sort()
     for entry in OPTIONS:
-        print entry, MENU[entry]
+        print (entry, MENU[entry])
 
-    SELECTION = raw_input("Please make a selection: ")
+    SELECTION = input("Please make a selection: ")
     if SELECTION == "1":
         cls()
-        print "You chose Tools."
+        print ("You chose Tools.")
         LISTY = TOOLS
         OpenTabs()
     elif SELECTION == '2':
         cls()
-        print "You chose News."
+        print ("You chose News.")
         LISTY = NEWS
         OpenTabs()
     elif SELECTION == '3':
         cls()
-        print "You chose Blogs."
+        print ("You chose Blogs.")
         LISTY = BLOGS
         OpenTabs()
     elif SELECTION == 'q':
         break
     else:
-        print "Invalid option."
+        print ("Invalid option.")
