@@ -1,5 +1,5 @@
 # OpenURLS
-Scripts to assist with daily InfoSec tasks.
+Scripts in multiple languages that open links in browser tabs based on a menu selection.
 
 ## Websites: A console script opens URLs in a browser based upon your menu selection.
 * Websites.cs is a C# .Net version.
@@ -10,3 +10,6 @@ Scripts to assist with daily InfoSec tasks.
 * Websites.java is a Java version.
 * Websites.sh is a bash version.
 * websites_rust contains a Rust (cargo) version.
+
+## To-Do
+Move lists of URLs / links to external files.
